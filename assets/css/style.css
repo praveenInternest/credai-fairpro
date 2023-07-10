@@ -27,8 +27,8 @@ nav {
 	position: fixed;
 	width: 100%;
 	padding: 15px 5%;
-	background-color: var(--nav-bg);
-	box-shadow: var(--nav-shadow);
+	background-color: #fff;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 nav .logo {
@@ -128,7 +128,16 @@ nav .menu span {
 /* ========== End Banner ============ */
 
 /* ========== Start Footer ========== */
+footer {
+	padding: 60px 0;
+}
 
+.footer--container .footer--social .social--links {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
 /* ========== End Footer ============ */
 
 /* ========== Start Media Query ========== */
@@ -167,7 +176,7 @@ nav .menu span {
 	nav ul {
 		--height: 0px;
 		flex-direction: column;
-		background: var(--nav-bg);
+		background: #005221;
 		position: absolute;
 		width: 100%;
 		left: 0;
@@ -193,6 +202,7 @@ nav .menu span {
 	nav ul li a {
 		width: 100%;
 		text-transform: capitalize !important;
+		color: #fff;
 	}
 	/* ========== End 910 ============ */
 
@@ -201,11 +211,6 @@ nav .menu span {
 		.banner--container {
 			aspect-ratio: 4/3;
 		}
-		/*
-		.banner--container .img {
-			top: 9%;
-		}
-*/
 		.banner--container .banner--desktop.img {
 			display: none;
 		}
@@ -217,11 +222,6 @@ nav .menu span {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
-		/*
-		.banner--container .img {
-			top: 12%;
-		}
-		*/
 	}
 	/* ========== End 480 ============ */
 }
