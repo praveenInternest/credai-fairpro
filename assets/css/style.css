@@ -7,6 +7,10 @@
 	font-family: "Fira Sans Condensed", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--nav-bg: #ecfff2;
 	--main-clr: #ab1931;
@@ -97,9 +101,40 @@ nav .menu span {
 }
 /* ========== End Header ============ */
 
+/* ========== Start Banner ========== */
+
+.banner {
+	width: 100%;
+	height: auto;
+}
+
+.banner--container {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 21/9;
+}
+.banner--container .img {
+	position: absolute;
+	top: 5%;
+	z-index: -1;
+	width: 100%;
+	height: auto;
+}
+
+.banner--container .banner--mobile.img {
+	display: none;
+}
+
+/* ========== End Banner ============ */
+
+/* ========== Start Footer ========== */
+
+/* ========== End Footer ============ */
+
 /* ========== Start Media Query ========== */
 
-@media (max-width: 910px) {
+/* ========== Start 910 ========== */
+@media screen and (max-width: 910px) {
 	nav .menu {
 		display: flex;
 	}
@@ -159,5 +194,34 @@ nav .menu span {
 		width: 100%;
 		text-transform: capitalize !important;
 	}
+	/* ========== End 910 ============ */
+
+	/* ========== Start 767 ========== */
+	@media screen and (max-width: 768px) {
+		.banner--container {
+			aspect-ratio: 4/3;
+		}
+
+		.banner--container .img {
+			top: 9%;
+		}
+
+		.banner--container .banner--desktop.img {
+			display: none;
+		}
+		.banner--container .banner--mobile.img {
+			display: block;
+		}
+	}
+	/* ========== End 767 ============ */
+
+	/* ========== Start 480 ========== */
+	@media screen and (max-width: 480px) {
+		.banner--container .img {
+			top: 12%;
+		}
+	}
+	/* ========== End 480 ============ */
 }
+
 /* ========== End Media Query ============ */
