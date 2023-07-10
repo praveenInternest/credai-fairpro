@@ -106,17 +106,17 @@ nav .menu span {
 .banner {
 	width: 100%;
 	height: auto;
+	padding-top: 100px;
 }
 
 .banner--container {
 	width: 100%;
 	height: auto;
-	aspect-ratio: 21/9;
 }
 .banner--container .img {
-	position: absolute;
+	/*position: absolute;
 	top: 5%;
-	z-index: -1;
+	z-index: -1;*/
 	width: 100%;
 	height: auto;
 }
@@ -201,11 +201,11 @@ nav .menu span {
 		.banner--container {
 			aspect-ratio: 4/3;
 		}
-
+		/*
 		.banner--container .img {
 			top: 9%;
 		}
-
+*/
 		.banner--container .banner--desktop.img {
 			display: none;
 		}
@@ -217,9 +217,11 @@ nav .menu span {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
+		/*
 		.banner--container .img {
 			top: 12%;
 		}
+		*/
 	}
 	/* ========== End 480 ============ */
 }
