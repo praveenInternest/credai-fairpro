@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	font-family: "Fira Sans Condensed", sans-serif;
 }
 
@@ -53,6 +54,7 @@ body h4,
 body h5,
 body h6 {
 	color: var(--main-secondary-red-700);
+	text-transform: uppercase;
 }
 
 .heading-style {
@@ -125,13 +127,13 @@ nav ul li {
 	padding: var(--padding);
 }
 
-nav ul li a {
+ul li a {
 	color: #005221;
 	text-decoration: none;
 	position: relative;
 }
 
-nav ul li a::after {
+ul li a::after {
 	content: "";
 	width: 0%;
 	height: 1.8px;
@@ -143,7 +145,7 @@ nav ul li a::after {
 	transition: 0.3s ease;
 }
 
-nav ul li a:hover::after {
+ul li a:hover::after {
 	width: 100%;
 }
 
@@ -240,21 +242,40 @@ nav .menu span {
 	height: 24px;
 	background-color: var(--main-secondary-red-700);
 }
+
 /* ========== End Date, Time, Address ============ */
 
 /* ========== End About Fairpro ============ */
 
 /* ========== Start Footer ========== */
-footer {
+footer .footer--container {
 	padding: 60px 0;
+	background-color: #ededed;
 }
 
-.footer--container .footer--social .social--links {
-	list-style: none;
-	display: flex;
+footer ul {
 	padding: 0;
 	margin: 0;
 }
+footer ul li {
+	margin-bottom: 8px;
+}
+
+footer ul li a {
+	color: var(--primary-green-950);
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+
+footer .footer--copyrights {
+	background-color: var(--primary-green-950);
+	color: #fff;
+}
+
+footer .footer--copyrights a {
+	color: var(--primary-green-400);
+}
+
 /* ========== End Footer ============ */
 
 /* ========== Start Media Query ========== */
@@ -345,8 +366,8 @@ footer {
 			border-bottom: 2px solid var(--main-secondary-red-700);
 			position: absolute;
 			height: auto;
-			width: 50%;
-			left: 25%;
+			width: 25%;
+			left: 40%;
 			top: 0;
 		}
 
@@ -356,8 +377,8 @@ footer {
 			border-bottom: 2px solid var(--main-secondary-red-700);
 			position: absolute;
 			height: auto;
-			width: 50%;
-			left: 25%;
+			width: 25%;
+			left: 40%;
 			bottom: 0;
 		}
 
@@ -369,6 +390,9 @@ footer {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
+		footer .footer--copyrights {
+			text-align: center;
+		}
 	}
 	/* ========== End 480 ============ */
 }
