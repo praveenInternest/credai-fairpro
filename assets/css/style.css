@@ -390,6 +390,10 @@ footer .footer--copyrights a {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
+		.advantages-section {
+			text-align: center;
+		}
+
 		footer .footer--copyrights {
 			text-align: center;
 		}
