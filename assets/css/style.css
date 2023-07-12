@@ -64,6 +64,14 @@ body h6 {
 	padding-bottom: 72px;
 }
 
+.section-margin-top {
+	margin-top: 72px;
+}
+
+.section-margin-bottom {
+	margin-bottom: 72px;
+}
+
 .heading-style {
 	display: inline-block;
 	text-transform: uppercase;
@@ -255,6 +263,67 @@ nav .menu span {
 
 /* ========== End About Fairpro ============ */
 
+/* ========== Start Stall Layout ========== */
+@keyframes pulse {
+	from {
+		box-shadow: 0 0 0 0px rgba(211, 47, 47);
+	}
+
+	to {
+		box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+	}
+}
+.stall-layout {
+	background: var(--secondary-red-100);
+}
+
+.stall--image-layout {
+	display: flex;
+	justify-content: center;
+}
+.stall--image-container {
+	position: relative;
+}
+
+.stall--image-container .highlight-points span {
+	display: inline-block;
+	cursor: pointer;
+	animation: pulse 1.5s infinite;
+	border-radius: 100%;
+}
+
+.stall--image-container .highlight-points .point-tooltip {
+	visibility: hidden;
+	width: fit-content;
+	white-space: nowrap;
+	background-color: var(--main-primary-green-900);
+	color: #fff;
+	text-align: left;
+	border-radius: 6px;
+	padding: 5px 8px;
+	text-transform: uppercase;
+
+	/* Position the tooltip */
+	position: relative;
+	z-index: 5;
+	display: none;
+	align-items: center;
+	gap: 4px;
+}
+
+.stall--image-container .highlight-points:hover .point-tooltip {
+	visibility: visible;
+	display: flex;
+}
+
+.highlight-points.point-1 {
+	position: absolute;
+	top: 28%;
+	left: 26%;
+}
+
+/* ========== End Stall Layout ============ */
+
 /* ========== Start Footer ========== */
 footer .footer--container {
 	padding: 60px 0;
@@ -412,6 +481,13 @@ footer .footer--copyrights a {
 
 		.advantages-section {
 			text-align: center;
+		}
+
+		.stall--image-container .highlight-points span {
+			font-weight: 600;
+			font-size: 10px;
+			width: 14px;
+			height: 14px;
 		}
 
 		footer .footer--copyrights {
