@@ -57,6 +57,13 @@ body h6 {
 	text-transform: uppercase;
 }
 
+.section-padding-top {
+	padding-top: 72px;
+}
+.section-padding-bottom {
+	padding-bottom: 72px;
+}
+
 .heading-style {
 	display: inline-block;
 	text-transform: uppercase;
@@ -64,7 +71,8 @@ body h6 {
 	/* text-align: center; */
 	margin: auto;
 	white-space: nowrap;
-	padding-bottom: 13px;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
 	position: relative;
 }
 .heading-style:before {
@@ -390,6 +398,18 @@ footer .footer--copyrights a {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
+		body .heading-style {
+			font-size: 20px;
+		}
+
+		body h4 {
+			font-size: 19px;
+		}
+
+		body p {
+			font-size: 14px;
+		}
+
 		.advantages-section {
 			text-align: center;
 		}
