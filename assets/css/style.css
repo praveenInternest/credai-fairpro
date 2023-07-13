@@ -324,6 +324,12 @@ nav .menu span {
 
 /* ========== End Stall Layout ============ */
 
+/* ========== Start Participants ========== */
+.participants {
+	background-color: var(--secondary-red-100);
+}
+/* ========== End Participants ============ */
+
 /* ========== Start Footer ========== */
 footer .footer--container {
 	padding: 60px 0;
