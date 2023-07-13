@@ -221,13 +221,13 @@ nav .menu span {
 	justify-content: center;
 	align-items: center;
 	gap: 32px 16px;
-	background-color: var(--primary-green-100);
+	background-color: var(--secondary-red-100);
 	color: var(--main-primary-green-900);
 	padding: 2rem;
 }
 
 .date-time-address-inner-section .date-time-address.date {
-	border-radius: 15px 0 0 15px;
+	border-radius: 8px 0 0 8px;
 }
 .date-time-address-inner-section .date-time-address.time {
 	position: relative;
@@ -250,7 +250,7 @@ nav .menu span {
 	top: 25%;
 }
 .date-time-address-inner-section .date-time-address.address {
-	border-radius: 0 15px 15px 0;
+	border-radius: 0 8px 8px 0;
 }
 
 .cross-line {
@@ -428,7 +428,11 @@ footer .footer--copyrights a {
 	/* ========== End 910 ============ */
 
 	/* ========== Start 767 ========== */
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 769px) {
+		.banner {
+			padding-top: 90px;
+		}
+
 		.banner--container {
 			aspect-ratio: 4/3;
 		}
@@ -440,7 +444,7 @@ footer .footer--copyrights a {
 		}
 
 		.date-time-address-inner-section .date-time-address.date {
-			border-radius: 15px 15px 0 0;
+			border-radius: 8px 8px 0 0;
 		}
 
 		.date-time-address-inner-section .date-time-address.time::before {
@@ -466,7 +470,7 @@ footer .footer--copyrights a {
 		}
 
 		.date-time-address-inner-section .date-time-address.address {
-			border-radius: 0 0 15px 15px;
+			border-radius: 0 0 8px 8px;
 		}
 	}
 	/* ========== End 767 ============ */
@@ -487,6 +491,10 @@ footer .footer--copyrights a {
 
 		.advantages-section {
 			text-align: center;
+		}
+
+		.advantages--image .advantage-image-svg {
+			width: 160px;
 		}
 
 		.stall--image-container .highlight-points span {
