@@ -13,6 +13,10 @@ html {
 	scroll-padding-top: 100px;
 }
 
+body .image-radius {
+	border-radius: 8px;
+}
+
 :root {
 	--nav-bg: #ecfff2;
 	--main-clr: #ab1931;
@@ -332,6 +336,9 @@ nav .menu span {
 
 .participants .participants-container {
 	padding: 0 5%;
+}
+.participants .participants-container img {
+	border-radius: 8px;
 }
 
 /* ========== End Participants ============ */
