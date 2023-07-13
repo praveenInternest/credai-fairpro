@@ -369,6 +369,14 @@ footer .footer--copyrights a {
 
 /* ========== Start Media Query ========== */
 
+/* ========== Start 1200 ========== */
+@media screen and (max-width: 1200px) {
+	nav ul li {
+		padding-left: 0;
+	}
+}
+/* ========== End 1200 ============ */
+
 /* ========== Start 910 ========== */
 @media screen and (max-width: 910px) {
 	nav .menu {
