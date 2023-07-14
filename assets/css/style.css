@@ -516,6 +516,10 @@ footer .footer--copyrights a {
 			font-size: 14px;
 		}
 
+		nav ul li {
+			padding-left: 22px;
+		}
+
 		.advantages-section {
 			text-align: center;
 		}
