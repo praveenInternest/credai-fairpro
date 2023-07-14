@@ -363,6 +363,16 @@ footer ul li a {
 	padding-bottom: 3px;
 }
 
+footer .footer--social-link {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+footer .footer--social-link a {
+	text-decoration: none;
+}
+
 footer .footer--copyrights {
 	background-color: var(--primary-green-950);
 	color: #fff;
