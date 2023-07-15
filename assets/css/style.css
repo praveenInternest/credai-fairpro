@@ -523,6 +523,10 @@ footer .footer--copyrights a {
 
 	/* ========== Start 480 ========== */
 	@media screen and (max-width: 480px) {
+		html {
+			scroll-padding-top: 56px;
+		}
+
 		body .heading-style {
 			font-size: 20px;
 		}
@@ -533,6 +537,21 @@ footer .footer--copyrights a {
 
 		body p {
 			font-size: 14px;
+		}
+
+		.section-padding-top {
+			padding-top: 56px;
+		}
+		.section-padding-bottom {
+			padding-bottom: 56px;
+		}
+
+		.section-margin-top {
+			margin-top: 56px;
+		}
+
+		.section-margin-bottom {
+			margin-bottom: 56px;
 		}
 
 		nav ul li {

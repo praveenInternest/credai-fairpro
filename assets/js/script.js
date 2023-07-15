@@ -19,7 +19,7 @@ menu.addEventListener("click", () => {
 	menu.classList.toggle("active");
 });
 
-console.log(navigationList);
+// console.log(navigationList);
 
 navigationList.forEach((i) => {
 	i.addEventListener("click", () => {
