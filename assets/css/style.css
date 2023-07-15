@@ -512,6 +512,11 @@ footer .footer--copyrights a {
 		.date-time-address-inner-section .date-time-address.address {
 			border-radius: 0 0 8px 8px;
 		}
+
+		.fairpro--content .about-credai-content.heading-style {
+			white-space: wrap;
+			width: 17ch;
+		}
 	}
 	/* ========== End 767 ============ */
 
