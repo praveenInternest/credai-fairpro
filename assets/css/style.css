@@ -271,6 +271,97 @@ nav .menu span {
 
 /* ========== End Date, Time, Address ============ */
 
+/* ========== Start Gallery Section ========== */
+.gallery-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-content: center;
+	gap: 16px;
+}
+
+.gallery-section .gallery-img {
+	width: 100%;
+	height: auto;
+	/* object-fit : resized to fit its gallery-section */
+	object-fit: cover;
+	object-position: center center;
+	background-color: #fff;
+	padding: 3px;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+		rgba(158, 80, 80, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+		rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+	cursor: pointer;
+}
+
+#click-view-gallery {
+	background-color: rgba(15, 18, 22, 0.5);
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(2px);
+	display: none;
+}
+
+#click-view-gallery.gallery-img-active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-img-close-btn {
+	width: 32px;
+	height: 32px;
+	background-color: var(--secondary-red-200);
+	border-radius: 100%;
+	position: absolute;
+	top: 1%;
+	right: 8px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.gallery-img-close-btn:after {
+	display: flex;
+	content: "\00d7";
+	color: var(--secondary-red-950);
+	font-size: 48px;
+	line-height: 32px;
+	align-content: center;
+	justify-content: center;
+}
+
+.model-img {
+	width: 64%;
+	height: auto;
+	aspect-ratio: 5/3;
+	object-fit: cover;
+	border: 4px solid #fff;
+	border-radius: 8px;
+	box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 680px) {
+	.gallery-section {
+		grid-template-columns: repeat(2, 200px);
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.gallery-section {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.gallery-section .gallery-img {
+		width: 100%;
+		height: auto;
+	}
+}
+/* ========== End Gallery Section ============ */
+
 /* ========== End About Fairpro ============ */
 
 /* ========== Start Stall Layout ========== */
@@ -516,6 +607,10 @@ footer .footer--copyrights a {
 		.fairpro--content .about-credai-content.heading-style {
 			white-space: wrap;
 			width: 17ch;
+		}
+
+		.model-img {
+			width: 90%;
 		}
 	}
 	/* ========== End 767 ============ */
